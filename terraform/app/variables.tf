@@ -45,3 +45,8 @@ variable "s3_bucket_name" {
   type        = string
   default     = "unleash-devops-home-exercise-app-bucket"
 }
+
+variable "my_ip" {
+  type        = string
+  default     = "0.0.0.0/0"
+}
