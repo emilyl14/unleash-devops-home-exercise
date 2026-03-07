@@ -1,0 +1,4 @@
+aws_region      = "eu-north-1"
+project_name    = "unleash-devops-home-exercise"
+s3_bucket_name  = "unleash-devops-home-exercise-app-bucket"
+container_image = "532150070616.dkr.ecr.eu-north-1.amazonaws.com/unleash_devops_home_exercise:latest"
