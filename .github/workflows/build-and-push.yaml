@@ -46,29 +46,16 @@ jobs:
       id-token: write
       contents: read
 
-    defaults:
-      run:
-        working-directory: terraform/app
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
-          aws-region: eu-north-1
+          aws-region: ${{ env.AWS_REGION }}
 
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v3
-        with:
-          terraform_version: "1.7"
-
-      - name: Terraform Init
-        run: terraform init
-
-      - name: Terraform Apply
+      - name: Deploy to ECS
         run: |
-          terraform apply -auto-approve \
-            -var="container_image=${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ github.sha }}"
+          aws ecs update-service \
+            --cluster unleash-devops-home-exercise-cluster \
+            --service unleash-devops-home-exercise-service \
+            --force-new-deployment
