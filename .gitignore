@@ -1,3 +1,10 @@
 node_modules
 dist
 .vscode/launch.json
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfplan
+.terraform.lock.hcl

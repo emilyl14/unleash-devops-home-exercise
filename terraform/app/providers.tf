@@ -11,7 +11,6 @@ terraform {
 
 provider "aws" {
   region  = var.aws_region
-  profile = "emily-home-exercise"
 
   default_tags {
     tags = {
