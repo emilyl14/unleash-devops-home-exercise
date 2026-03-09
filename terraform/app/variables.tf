@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "AWS region to deploy into"
   type        = string
-  default     = "us-east-1"
+  default     = "eu-north-1"
 }
 
 variable "project_name" {
@@ -13,7 +13,7 @@ variable "project_name" {
 variable "container_image" {
   description = "Full ECR image URI including tag"
   type        = string
-  default     = "532150070616.dkr.ecr.us-east-1.amazonaws.com/unleash-devops-home-exercise:latest"
+  default     = "532150070616.dkr.ecr.eu-north-1.amazonaws.com/unleash-devops-home-exercise:latest"
 }
 
 variable "container_port" {
@@ -43,7 +43,7 @@ variable "desired_count" {
 variable "s3_bucket_name" {
   description = "Name for the S3 bucket the app checks files against"
   type        = string
-  default     = "unleash-devops-home-exercise-app-s3-bucket"
+  default     = "unleash-devops-home-exercise-app-bucket"
 }
 
 variable "my_ip" {

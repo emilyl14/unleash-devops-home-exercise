@@ -7,9 +7,9 @@ on:
       - 'terraform/**'
 
 env:
-  AWS_REGION: us-east-1
+  AWS_REGION: eu-north-1
   ECR_REPOSITORY: unleash-devops-home-exercise
-  ECR_REGISTRY: 532150070616.dkr.ecr.us-east-1.amazonaws.com
+  ECR_REGISTRY: 532150070616.dkr.ecr.eu-north-1.amazonaws.com
 
 jobs:
   build-and-push:
