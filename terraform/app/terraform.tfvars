@@ -1,5 +1,5 @@
 aws_region      = "us-east-1"
 project_name    = "unleash-devops-home-exercise"
 s3_bucket_name  = "unleash-devops-home-exercise-app-bucket"
-container_image = "532150070616.dkr.ecr.us-east-1.amazonaws.com/unleash_devops_home_exercise:latest"
+container_image = "532150070616.dkr.ecr.us-east-1.amazonaws.com/unleash-devops-home-exercise:latest"
 my_ip           = "46.120.209.164/32"

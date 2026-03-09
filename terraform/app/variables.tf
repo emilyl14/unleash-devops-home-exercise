@@ -13,7 +13,7 @@ variable "project_name" {
 variable "container_image" {
   description = "Full ECR image URI including tag"
   type        = string
-  default     = "532150070616.dkr.ecr.us-east-1.amazonaws.com/unleash_devops_home_exercise:latest"
+  default     = "532150070616.dkr.ecr.us-east-1.amazonaws.com/unleash-devops-home-exercise:latest"
 }
 
 variable "container_port" {
