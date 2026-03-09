@@ -43,7 +43,8 @@ resource "aws_iam_policy" "devops_home_exercise" {
                 "ecs:*",
                 "ec2:*",
                 "logs:*",
-                "s3:*"
+                "s3:*",
+                "dynamodb:*"
             ],
             "Resource": "*"
         },
