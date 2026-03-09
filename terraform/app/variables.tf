@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "AWS region to deploy into"
   type        = string
-  default     = "eu-north-1"
+  default     = "us-east-1"
 }
 
 variable "project_name" {
@@ -13,7 +13,7 @@ variable "project_name" {
 variable "container_image" {
   description = "Full ECR image URI including tag"
   type        = string
-  default     = "532150070616.dkr.ecr.eu-north-1.amazonaws.com/unleash_devops_home_exercise:latest"
+  default     = "532150070616.dkr.ecr.us-east-1.amazonaws.com/unleash_devops_home_exercise:latest"
 }
 
 variable "container_port" {
