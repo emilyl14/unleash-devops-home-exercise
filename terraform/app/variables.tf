@@ -43,7 +43,7 @@ variable "desired_count" {
 variable "s3_bucket_name" {
   description = "Name for the S3 bucket the app checks files against"
   type        = string
-  default     = "unleash-devops-home-exercise-app-bucket"
+  default     = "unleash-devops-home-exercise-app-s3-bucket"
 }
 
 variable "my_ip" {
